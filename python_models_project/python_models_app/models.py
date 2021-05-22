@@ -43,4 +43,4 @@ class Student(models.Model):
     year_of_graduation = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.fullname, self.year_of_graduation
+        return self.fullname

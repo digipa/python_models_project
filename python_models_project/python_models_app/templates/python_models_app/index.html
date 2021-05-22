@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Python Models App</title>
+</head>
+<body>
+    <h1>Welcome to my App</h1>
+    <div>
+        {% for student in students %}
+            <h3>{{ student.fullname }}</h3>
+            <p>{{ student.grade }}</p>
+            <p>{{ student.school }}</p>
+            <p>{{ student.department }}</p>
+            <p>{{ student.certificate_type }}</p>
+            <p>{{ student.year_of_graduation }}</p>
+        {% endfor %}
+    </div>
+    <div>
+        {% for school in schools %}
+            <h3>{{school.name}}</h3>
+        {% endfor %}
+    </div>
+    <div>
+        {% for grade in grades %}
+            <h3>{{grade.type}}</h3>
+        {% endfor %}
+    </div>
+    <div>
+        {% for certificate_type in certificate_types %}
+            <h3>{{certificate_type.name}}</h3>
+        {% endfor %}
+    </div>
+    <div>
+        {% for faculty in faculties %}
+            <h3>{{faculty.name}}</h3>
+        {% endfor %}
+    </div>
+    <div>
+        {% for department in departments %}
+            <h3>{{department.faculty}}</h3>
+            <h3>{{department.name}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
